@@ -1,9 +1,8 @@
 import os
 import socket
 import psutil
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
 
@@ -14,8 +13,11 @@ def get_system_info():
     # ホスト名 (Pod Name)
     hostname = socket.gethostname()
     
-    # IPアドレス (Pod IP)
-    ip_address = socket.gethostbyname(hostname)
+    try:
+        # IPアドレス (Pod IP)
+        ip_address = socket.gethostbyname(hostname)
+    except:
+        ip_address = "127.0.0.1"
     
     # CPU / Memory 使用率
     cpu_usage = psutil.cpu_percent(interval=None)
@@ -80,4 +82,3 @@ async def read_root():
 @app.get("/health")
 async def health_check():
     return {"status": "healthy"}
-
