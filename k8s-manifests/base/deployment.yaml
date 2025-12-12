@@ -6,7 +6,6 @@ metadata:
   labels:
     app: python-web-app
 spec:
-  # レプリカ数: 2つのPodを常時稼働させて高可用性を確保
   replicas: 2
   selector:
     matchLabels:
@@ -18,14 +17,10 @@ spec:
     spec:
       containers:
         - name: python-app
-          # GitHub Actionsでビルドされたイメージがここに入ります
-          # (初期設定としてダミーを指定、後でCI/CDが書き換えます)
           image: public.ecr.aws/nginx/nginx:latest
           ports:
             - containerPort: 8000
           resources:
-            # リソース制限 (Resource Limits) - 重要！
-            # これを設定しないとHPA(オートスケーリング)が動きません
             requests:
               cpu: "100m"
               memory: "128Mi"
