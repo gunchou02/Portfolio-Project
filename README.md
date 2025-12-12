@@ -90,6 +90,7 @@ terraform init
 terraform apply -auto-approve
 ```
 3. アプリケーションのデプロイ (Application Deployment)
+   
 ArgoCD により k8s-manifests リポジトリが同期されると、自動的にアプリケーションがデプロイされます。
 
 ---
