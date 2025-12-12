@@ -86,7 +86,7 @@ AWS CLI & Configure 設定済み
 
 2. インフラのプロビジョニング (Infrastructure Provisioning)
 ```bash
-   cd terraform/environments/prod
+cd terraform/environments/prod
 terraform init
 terraform apply -auto-approve
 ```
