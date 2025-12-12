@@ -54,7 +54,13 @@ kubectlコマンドによるPodのステータス確認と、GitOpsによる自�
 
 ## 🏗️ アーキテクチャ (Architecture)
 
-*(ここにアーキテクチャ図を挿入してください)*
+![AWS EKS GitOps Architecture](./images/architecture.png)
+<details>
+<summary>図の解説</summary>
+   
+このアーキテクチャは、Public SubnetとPrivate Subnetを分離することでセキュリティを確保し、GitHub ActionsとArgoCDを用いた完全なGitOpsフローを実現しています。
+</details>
+
 > **構成概要:**
 > User Traffic -> AWS ALB -> EKS (Node Group) -> Service -> Python Pods
 
