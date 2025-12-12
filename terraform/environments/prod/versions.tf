@@ -6,10 +6,11 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+    helm = {
+      source  = "hashicorp/helm"
+      version = "~> 2.0"  #
+    }
   }
-
-  # ⚠️ 중요: 나중에 S3에 tfstate를 저장할 때 이곳의 주석을 풉니다.
-  # backend "s3" { ... }
 }
 
 provider "aws" {
@@ -20,7 +21,6 @@ provider "aws" {
       Project     = "aws-eks-gitops"
       Environment = "prod"
       ManagedBy   = "Terraform"
-      Owner       = "PortfolioUser"
     }
   }
 }
