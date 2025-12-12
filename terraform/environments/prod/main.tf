@@ -70,7 +70,9 @@ provider "helm" {
 # IAM Role 作成 (LBコントローラー用 - IRSA)
 # AWS公式のモジュールを使用して、安全に権限を付与します
 module "lb_role" {
-  source    = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
+  source  = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
+  version = "~> 5.30" # ⚠️ エラー回避のためバージョンを5.30に固定
+
   role_name = "${var.env}-eks-lb-role"
 
   attach_load_balancer_controller_policy = true
