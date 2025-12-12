@@ -27,8 +27,8 @@
 
 #### 1. Webダッシュボード
 ロードバランサー(ALB)経由で正常にアクセスできている様子です。
-![Dashboard](./images/dashboard01.jpg)
-![Dashboard](./images/dashboard02.jpg)
+![Dashboard](./images/dash01.jpg)
+![Dashboard](./images/dash02.jpg)
 
 #### 2. ターミナル動作ログ
 kubectlコマンドによるPodのステータス確認と、GitOpsによる自動デプロイの様子です。
