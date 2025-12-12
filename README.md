@@ -78,11 +78,11 @@
 1. 前提条件 (Prerequisites)
 AWS CLI & Configure 設定済み
 
-Terraform インストール済み
+* Terraform インストール済み
 
-Docker インストール済み
+* Docker インストール済み
 
-Kubectl インストール済み
+* Kubectl インストール済み
 
 2. インフラのプロビジョニング (Infrastructure Provisioning)
 ```bash
