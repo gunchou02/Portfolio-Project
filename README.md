@@ -7,6 +7,28 @@
 ![ArgoCD](https://img.shields.io/badge/ArgoCD-%23EF7B4D.svg?style=for-the-badge&logo=argo&logoColor=white)
 ![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
 
+---
+
+## 🌐 デモ・動作確認 (Live Demo)
+
+現在、AWSのコスト削減のため、インフラは流動的に運用しています。
+サーバーが稼働中の場合、以下のリンクから実際にロードバランシングの動作を確認できます。
+
+* **Live URL:** [http://k8s-default-pythonwe-2b03086978-1192911876.ap-northeast-1.elb.amazonaws.com](http://k8s-default-pythonwe-2b03086978-1192911876.ap-northeast-1.elb.amazonaws.com)
+
+> **Note:**
+> ブラウザでアクセスすると、処理を担当しているPodの **Hostname** と **IP Address** が表示されます。
+> ページを更新(Refresh)すると、トラフィックが複数のPodに分散されていることが確認できます。
+
+---
+
+### 📸 実行画面 (Screenshot)
+アクセスできない場合や、オフライン時の参考として、稼働時のスクリーンショットを添付します。
+
+![Dashboard Preview](./images/dashboard-demo01.jpg),(./images/dashboard-demo02.jpg)
+
+---
+
 ## 📖 概要 (Overview)
 本プロジェクトは、**Infrastructure as Code (IaC)** および **GitOps** 手法を取り入れ、AWS上で高可用性と拡張性を備えたWebサービス基盤を構築したインフラエンジニアリングのポートフォリオです。
 
