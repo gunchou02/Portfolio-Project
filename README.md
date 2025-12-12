@@ -141,9 +141,13 @@ terraform apply -auto-approve
 
 (開発中に直面した課題とその解決策を記述予定)
 
-* Issue 1: Terraform State Lock の競合解決プロセス
+* Issue 1 : Terraform State Lock の競合解決プロセス
 
-* Issue 2: ALB Ingress Controller 設定時の Subnet Tagging 問題
+* Issue 2 : ALB Ingress Controller 設定時の Subnet Tagging 問題
+
+* Issue 3 : ALB Controller の Helm Module バージョン不一致によるデプロイエラーの解消 (モジュールバージョン 5.30 への固定)
+
+* Issue 4 : EKS Worker Node が ECR からプライベートイメージを取得できない問題と IAM Policy の手動アタッチによる解決
 
 ---
 
