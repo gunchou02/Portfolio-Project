@@ -23,21 +23,27 @@
 ---
 
 ### 📸 実行画面 (Screenshot)
+
 アクセスできない場合や、オフライン時の参考として、稼働時のスクリーンショットを添付します。
 
 #### 1. Webダッシュボード
+
 ロードバランサー(ALB)経由で正常にアクセスできている様子です。
+
 ![Dashboard](./images/dash01.jpg)
 ![Dashboard](./images/dash02.jpg)
 
 #### 2. ターミナル動作ログ
+
 kubectlコマンドによるPodのステータス確認と、GitOpsによる自動デプロイの様子です。
+
 ![Terminal](./images/terminal01.jpg)
 ![Terminal](./images/terminal02.jpg)
 
 ---
 
 ## 📖 概要 (Overview)
+
 本プロジェクトは、**Infrastructure as Code (IaC)** および **GitOps** 手法を取り入れ、AWS上で高可用性と拡張性を備えたWebサービス基盤を構築したインフラエンジニアリングのポートフォリオです。
 
 単なるサーバー構築にとどまらず、**Terraform**によるインフラの自動プロビジョニング、**Amazon EKS (Kubernetes)** を活用したコンテナオーケストレーション、そして **ArgoCD** によるCDパイプラインの構築を行い、モダンな開発・運用フローを再現しました。
