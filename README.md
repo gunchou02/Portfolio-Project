@@ -25,7 +25,15 @@
 ### 📸 実行画面 (Screenshot)
 アクセスできない場合や、オフライン時の参考として、稼働時のスクリーンショットを添付します。
 
-![Dashboard Preview](./images/dashboard-demo01.jpg),(./images/dashboard-demo02.jpg)
+#### 1. Webダッシュボード
+ロードバランサー(ALB)経由で正常にアクセスできている様子です。
+![Dashboard](./images/dashboard01.jpg)
+![Dashboard](./images/dashboard02.jpg)
+
+#### 2. ターミナル動作ログ
+kubectlコマンドによるPodのステータス確認と、GitOpsによる自動デプロイの様子です。
+![Terminal](./images/terminal01.jpg)
+![Terminal](./images/terminal02.jpg)
 
 ---
 
