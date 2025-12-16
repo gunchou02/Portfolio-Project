@@ -90,8 +90,8 @@ kubectlコマンドによるPodのステータス確認と、GitOpsによる自�
     * ArgoCD がマニフェストの変更を検知し、EKS クラスターへ自動的に同期 (Sync)。
 
 3.  **オートスケーリング (HPA & CA)**
-    * **HPA (Horizontal Pod Autoscaler)**　： CPU使用率の上昇に伴い、Pod数を自動でスケールアウト。
-    * **Cluster Autoscaler**　： ノードリソース不足時、ワーカーノード(EC2)を自動追加。
+    * **HPA (Horizontal Pod Autoscaler)：** CPU使用率の上昇に伴い、Pod数を自動でスケールアウト。
+    * **Cluster Autoscaler：**ノードリソース不足時、ワーカーノード(EC2)を自動追加。
 
 4.  **検証用 Web アプリケーション**
     * アクセスごとに処理を担当している **PodのIPとホスト名** を表示し、ロードバランシングの動作を視覚的に確認可能。
@@ -141,18 +141,18 @@ terraform apply -auto-approve
 
 (開発中に直面した課題とその解決策を記述予定)
 
-* Issue 1 : Terraform State Lock の競合解決プロセス
+* Issue 1: Terraform State Lock の競合解決プロセス
 
-* Issue 2 : ALB Ingress Controller 設定時の Subnet Tagging 問題
+* Issue 2: ALB Ingress Controller 設定時の Subnet Tagging 問題
 
-* Issue 3 : ALB Controller の Helm Module バージョン不一致によるデプロイエラーの解消 (モジュールバージョン 5.30 への固定)
+* Issue 3: ALB Controller の Helm Module バージョン不一致によるデプロイエラーの解消 (モジュールバージョン 5.30 への固定)
 
-* Issue 4 : EKS Worker Node が ECR からプライベートイメージを取得できない問題と IAM Policy の手動アタッチによる解決
+* Issue 4: EKS Worker Node が ECR からプライベートイメージを取得できない問題と IAM Policy の手動アタッチによる解決
 
 ---
 
 ## 📬 Contact
 
-Name　: [PARK JEONGBIN]
+Name: [PARK JEONGBIN]
 
-Email　: [gunchou02@gmail.com]
+Email: [gunchou02@gmail.com]
