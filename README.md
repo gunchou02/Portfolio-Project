@@ -90,8 +90,8 @@ kubectlコマンドによるPodのステータス確認と、GitOpsによる自�
     * ArgoCD がマニフェストの変更を検知し、EKS クラスターへ自動的に同期 (Sync)。
 
 3.  **オートスケーリング (HPA & CA)**
-    * **HPA (Horizontal Pod Autoscaler):** CPU使用率の上昇に伴い、Pod数を自動でスケールアウト。
-    * **Cluster Autoscaler:** ノードリソース不足時、ワーカーノード(EC2)を自動追加。
+    * **HPA (Horizontal Pod Autoscaler)**　： CPU使用率の上昇に伴い、Pod数を自動でスケールアウト。
+    * **Cluster Autoscaler**　： ノードリソース不足時、ワーカーノード(EC2)を自動追加。
 
 4.  **検証用 Web アプリケーション**
     * アクセスごとに処理を担当している **PodのIPとホスト名** を表示し、ロードバランシングの動作を視覚的に確認可能。
@@ -111,7 +111,7 @@ kubectlコマンドによるPodのステータス確認と、GitOpsによる自�
 ├── 📂 k8s-manifests       # Kubernetes リソース定義 (Deployment, Service, Ingress)
 │   └── base/             # Kustomize Base 設定
 └── 📂 .github
-    └── workflows/        # GitHub Actions CI パイ프ライン設定
+    └── workflows/        # GitHub Actions CI パイプライン設定
 ```
 ---
 
@@ -153,6 +153,6 @@ terraform apply -auto-approve
 
 ## 📬 Contact
 
-Name: [PARK JEONGBIN]
+Name　: [PARK JEONGBIN]
 
-Email: [gunchou02@gmail.com]
+Email　: [gunchou02@gmail.com]
